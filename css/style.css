@@ -144,7 +144,7 @@ main {
     width: 100%;
 }
 
-.menu-container .row :hover {
+.menu-container :hover .row {
     color: white;
 }
 
@@ -238,6 +238,10 @@ h3 {
     text-align: center;
 }
 
+.album-header :hover {
+    color: white;
+}
+
 .album-header li {
     display: inline-block;
     margin: 0 1%;
@@ -262,19 +266,19 @@ h3 {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 3%;
 }
 
 main .col {
-    width: 140px;
+    width: 9.3em;
     margin-bottom: 1%;
     margin-right: 2%;
 }
 
 main .img-container {
     position: relative; /* Per il before */
-    height: 140px;
+    height: 9.3em;
 }
 
 main .img-container img {
@@ -283,12 +287,12 @@ main .img-container img {
 
 main .img-container > a {
     display: inline-block;
-    height: 140px;
     width: 100%;
 }
 
 .col a {
     text-align: center;
+    height: 9.3em;
 }
 
 .col > a > h6 {
@@ -307,8 +311,8 @@ main .img-container > a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 140px;
-    line-height: 140px;
+    height: 100%;
+    line-height: 3.65em;
     text-align: center;
     font-size: 2.5em;
     color: white;
