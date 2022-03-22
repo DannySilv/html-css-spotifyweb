@@ -184,6 +184,10 @@ main {
     line-height: 2em;
 }
 
+.menu-container-playlist > a {
+    margin: 3% 0;
+}
+
 #big-icon {
     font-size: 1.8em;
 }
@@ -202,7 +206,7 @@ main {
     margin: 0 8%;
 }
 
-.sidebar-footer > .row > a, p {
+.sidebar-footer > .row > a, p :not(.subtitle) {
     height: 2em;
     line-height: 2em;
 }
@@ -336,13 +340,17 @@ footer {
     color: white;
 }
 
+a {
+    color: inherit;
+}
+
 /* LEFT PLAYER */
 .left-player {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: 1%;
-    width: 14%;
+    width: 15%;
     height: 100%;
 }
 
@@ -356,7 +364,7 @@ footer .img-container img {
 
 .left-player .player-description {
     margin-left: 3%;
-    margin-right: 7%;
+    margin-right: 8%;
     line-height: 0.7em;
 }
 
@@ -365,11 +373,19 @@ footer .img-container img {
     color: #535353;
 }
 
-footer > .left-player > i {
+.left-player > a {
     margin: 0;
     margin-left: 5%;
     font-size: 0.8em;
     color: #535353;
+}
+
+.left-player > a :hover {
+    color: white;
+}
+
+.left-player > i {
+    display: inline-block;
 }
 
 /* MID-PLAYER */
@@ -387,58 +403,100 @@ footer > .left-player > i {
     justify-content: center;
     align-items: center;
     height: 50%;
+    line-height: 50%;
     width: 100%;
 }
 
 .top-row .player-icons {
     height: 50%;
+    line-height: 50%;
     width: 50%;
     text-align: center;
     font-size: 0.7em;
 }
 
-.top-row .player-icons > i {
-    width: 10%;
+.player-icons > a {
+    margin: 0 2%;
     vertical-align: middle;
+    font-size: 1.2em;
 }
 
-.top-row .player-icons :nth-child(3) {
-    font-size: 2em;
+.player-icons > i {
+    display: inline-block;
+}
+
+.player-icons :nth-child(3) {
+    font-size: 2.2em;
+    transition: transform 4s;
+}
+
+.player-icons :nth-child(3) :hover {
+    transform: scale(1.2);
 }
 
 .bottom-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    font-size: 0.6em;
     height: 50%;
-    width: 100%;
+    width: 70%;
 }
 
 .player-bar {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     font-size: 0.6em;
     width: 70%;
+    height: 20%;
 }
 
-.player-bar > p {
+.bottom-row > p {
     width: 10%;
 }
 
 .first-half {
-    border: 2px solid white;
+    border: 1px solid white;
+    background-color: white;
     border-radius: 30px;
-    width: 17%;
-
+    width: 23%;
 }
 
 .second-half {
-    border: 2px solid #535353;
+    border: 1px solid #535353;
+    background-color: #535353;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 63%;
+    width: 77%;
+}
+
+.line-hover-music {
+    display: none;
+    position: absolute;
+    left: 0;
+    border: 1.5px solid #abfc2e;
+    background-color: #abfc2e;
+    border-radius: 30px;
+    width: 23%;
+    z-index: 20;
+}
+
+.line-hover-music > i {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    line-height: 0%;
+    top: 0.1em;
+    left: 95%;
+    font-size: 1.5em;
+}
+
+.bottom-row :hover .line-hover-music {
+    display: inline;
 }
 
 /* RIGHT-PLAYER */
@@ -451,12 +509,17 @@ footer > .left-player > i {
     margin-right: 1%;
 }
 
-footer > .right-player > i {
-    margin: 0 auto;
+.right-player > a {
+    margin: 0 3.5%;
     font-size: 0.8em;
 }
 
+.right-player > i {
+    display: inline-block;
+}
+
 .volume-bar {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -474,4 +537,29 @@ footer > .right-player > i {
     border: 1px solid #535353;
     background-color: #535353;
     width: 30%;
+}
+
+.line-hover-volume {
+    display: none;
+    position: absolute;
+    left: 0;
+    border: 1.2px solid #abfc2e;
+    background-color: #abfc2e;
+    border-radius: 30px;
+    width: 70%;
+    z-index: 20;
+}
+
+.line-hover-volume > i {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    line-height: 5%;
+    top: 0%;
+    left: 90%;
+    font-size: 0.5em;
+}
+
+.right-player :hover .line-hover-volume {
+    display: inline;
 }
