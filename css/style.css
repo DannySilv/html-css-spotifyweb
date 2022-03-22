@@ -45,10 +45,6 @@ a {
     font-size: 1.4em;
 }
 
-.overflow {
-    overflow: auto;
-}
-
 /* TEXT */
 .text {
     font-size: 0.7em;
@@ -61,6 +57,7 @@ a {
     font-weight: 700;
     color: white;
 }
+
 /* HEADER */
 header {
     position: fixed;
@@ -79,12 +76,15 @@ header .btn {
 }
 
 .header-btn {
-    width: 100%;
     padding: 0.8em 3.5em;
     border: 1px solid white;
     border-radius: 50px;
     font-size: 0.6em;
     color: white;
+}
+
+header div :hover .header-btn {
+    transform: scale(1.5);
 }
 
 /* MAIN */
@@ -144,6 +144,10 @@ main {
     width: 100%;
 }
 
+.menu-container .row :hover {
+    color: white;
+}
+
 .border {
     position: absolute;
     top: 3%;
@@ -157,10 +161,12 @@ main {
     font-size: 1.2em;
     color: #535353;
 }
-
-.row > p {
+.row > a {
     width: 80%;
-    height: 50%;
+}
+.row > p {
+    height: 2em;
+    line-height: 2em;
 }
 
 .menu-container-playlist {
@@ -196,7 +202,7 @@ main {
     margin: 0 8%;
 }
 
-.sidebar-footer > .row > p {
+.sidebar-footer > .row > a, p {
     height: 2em;
     line-height: 2em;
 }
@@ -267,17 +273,53 @@ main .col {
 }
 
 main .img-container {
-    width: 100%;
+    position: relative; /* Per il before */
+    height: 140px;
 }
 
 main .img-container img {
     width: 100%;
 }
 
-.col > h6, .col > p {
+main .img-container > a {
+    display: inline-block;
+    height: 140px;
+    width: 100%;
+}
+
+.col a {
+    text-align: center;
+}
+
+.col > a > h6 {
     text-align: center;
     margin-top: 6%;
 }
+
+.col > a > p {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#play-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+.img-container:hover #play-hover {
+    display: inline;
+}
+
 /* FOOTER */
 footer {
     position: fixed;
