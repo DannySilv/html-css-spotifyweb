@@ -807,6 +807,12 @@ footer .img-container img {
     .b600-rp-icon > a {
         font-size: 0.8em;
     }
+    .b600-rp-icon > a {
+        color: #535353;
+    }
+    .b600-rp-icon > a :hover {
+        color: white;
+    }
     .b600-volume-bar {
         position: relative;
         display: flex;
