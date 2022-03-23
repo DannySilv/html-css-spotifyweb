@@ -124,8 +124,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 30%;
-    min-height: 180px;
+    height: 38%;
+    min-height: 160px;
     margin-left: 8%;
 }
 
@@ -139,29 +139,21 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 13%;
 }
 
-.row > .icon {
-    font-size: 1.2em;
-    color: #535353;
+.row > a > img {
+    width: 1.5em;
+    vertical-align: middle;
 }
 
-.row > .nav-menu {
-    width: 78%;
-    line-height: 100%;
+.row > a > .opacity {
+    opacity: 0.4;
 }
 
-.row > p {
-    height: 2em;
-    line-height: 2em;
-}
-
-.row :hover {
+.row :hover .hover {
     color: white;
-}
-
-.nav-menu :hover {
-    color: white;
+    opacity: 1;
 }
 
 .border {
@@ -197,7 +189,9 @@ main {
 }
 
 #big-icon {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    color: #535353;
+    vertical-align: middle;
 }
 
 #small-icon {
@@ -214,11 +208,6 @@ main {
     margin: 0 8%;
 }
 
-.sidebar-footer > .row > a, p :not(.subtitle) {
-    height: 2em;
-    line-height: 2em;
-}
-
 .line {
     width: 100%;
     height: 1%;
@@ -227,6 +216,18 @@ main {
     background-color: #535353;
     border-radius: 10px;
 }
+
+.sidebar-footer > .row > i {
+    width: 20%;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0.6;
+}
+
+.sidebar-footer > .row > span {
+    width: 75%;
+}
+
 
 /* ALBUM */
 .album {
@@ -279,6 +280,7 @@ h3 {
     flex-wrap: wrap;
     align-items: flex-start;
     max-width: 100%;
+    min-width: 310px;
     margin-bottom: 3%;
 }
 
@@ -346,6 +348,7 @@ footer {
     width: 100%;
     background-color: #282828;
     color: white;
+    overflow-x: auto;
 }
 
 a {
@@ -358,7 +361,8 @@ a {
     justify-content: flex-start;
     align-items: center;
     margin-left: 1%;
-    width: 15%;
+    width: 16%;
+    min-width: 135px;
     height: 100%;
 }
 
@@ -403,7 +407,8 @@ footer .img-container img {
     align-content: flex-start;
     align-items: center;
     height: 100%;
-    width: 70%;
+    min-width: 220px;
+    width: 68%;
 }
 
 .top-row {
@@ -514,6 +519,7 @@ footer .img-container img {
     align-items: center;
     height: 100%;
     width: 14%;
+    min-width: 135px;
     margin-right: 1%;
 }
 
