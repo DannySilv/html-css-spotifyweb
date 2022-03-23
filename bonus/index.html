@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" type="" href ="img/favicon.ico">
+    <!-- FONT&SYMBOLS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <a class="header-btn" href="">EFFETTUA L'UPGRADE</a>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+        
+        <!-- Sidebar -->
+        <section class="sidebar">
+
+            <!-- BREAKPOINT-600 -->
+            <div class="width-600-logo-container mt-20">
+                <a href=""><img src="img/logo-small.svg" alt="Logo Spotify Small"></a>
+            </div>
+            <div class="width-600-logo-container mt-20">
+                <a href=""><img src="img/home.svg" alt="Logo Home"></a>
+            </div>
+            <div class="width-600-logo-container">
+                <a href=""><img class="opacity" src="img/search.svg" alt="Logo Search"></a>
+            </div>
+            <div class="width-600-logo-container">
+                <a href=""><img class="opacity" src="img/libreria.svg" alt="Logo Library"></a>
+            </div>
+            <div class="mt-auto width-600-logo-container">
+                <a href=""><img id="small-icon" class="opacity" src="img/download.svg" alt="Download Button"></a>
+            </div>
+            <div class="width-600-logo-container">
+                <a href=""><i class="fas fa-user-circle"></i></a>
+            </div>
+            <!-- /BREAKPOINT-600 -->
+
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <a href=""><img src="img/logo.svg" alt="Logo Spotify"></a>
+                </div>
+            </div>
+            <div class="menu-container">
+                <div class="row">
+                    <div class="border">
+                    </div>
+                    <a href="">
+                        <img src="img/home.svg" alt="Home">
+                        <span class="white-text">Home</span>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <img class="opacity hover" src="img/search.svg" alt="Search">
+                        <span class="text hover"> Cerca</span>
+                    </a>
+                </div>
+                <div class="row mb-10"> 
+                    <a href="">
+                        <img class="opacity hover" src="img/libreria.svg" alt="Library">
+                        <span class="text hover"> La tua libreria</span>
+                    </a>
+                </div>
+                <h5>PLAYLIST</h5>
+                <div class="row">
+                    <a href="">
+                        <i id="big-icon" class="fas fa-plus-square"></i>
+                        <span class="text hover">Crea Playlist</span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-container-playlist">
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+                <a href=""><p class="text">Nuova Playlist</p></a>
+            </div>
+            <div class="sidebar-footer">
+                <div class="row">
+                    <a href="">
+                        <img id="small-icon" class="opacity hover" src="img/download.svg" alt="Download Button">
+                        <span class="text hover">Installa app</span>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="row">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="white-text">John Doe</span>
+                </div>
+            </div>
+        </section>
+        <!-- /Sidebar -->
+
+        <!-- Album -->
+        <section class="album">
+            <ul class="album-header">
+                <a href=""><li class="selection-line">IN EVIDENZA</li></a>
+                <a href=""><li>PODCAST</li></a>
+                <a href=""><li>CLASSIFICHE</li></a>
+                <a href=""><li>GENERI E MOOD</li></a>
+                <a href=""><li>NUOVE USCITE</li></a>
+                <a href=""><li>SCOPRI</li></a>
+            </ul>
+            <div class="album-main-container">
+                <h3>Recently Played</h3>
+                <div class="album-main">
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/metal_lifting.jpg" alt="Heavy Metal Playlist"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Heavy metal</h6></a>
+                        <a href=""><p class="text">Subtitle</p></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/stranger.jpeg" alt="Stranger Things Playlist"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Strange Things, Vol. 1 (a Netflix Original Series Soundtrack)</h6></a>
+                        <a href=""><p class="text">Kyle Dixon & Michael Stein</p></a>
+                    </div>
+                    <div class="col">   
+                        <div class="img-container">
+                            <a href=""><img src="img/aquietplace.jpeg" alt="A Quiet Place"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">A quiet place</h6></a>
+                        <a href=""><p class="text">Subtitle</p></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/split.jpeg" alt="Split"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Split</h6></a>
+                        <a href=""><p class="text">Subtitle</p></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/cure.jpeg" alt="A Cure for Wellness"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">A cure for wellness</h6></a>
+                        <a href=""><p class="text">Subtitle</p></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/sinister.jpeg" alt="Sinister"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Sinister</h6></a>
+                        <a href=""><p class="text">Subtitle</p></a>
+                    </div>
+                </div>          
+                <h3 class="mb-0-5">Creato per John Doe</h3>
+                <p class="text mb-3">Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="album-main">
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/radar.jpeg" alt="Release Radar"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Release Radar</h6></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/mixdaily.jpeg" alt="Daily Mix 1"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Daily Mix 1</h6></a>
+                    </div>
+                </div>
+                <h3 class="mb-0-5">Artisti più popolari</h3>
+                <p class="text mb-3">Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="album-main">
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/youg.jpeg" alt="Youg"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Lana Del Rey</h6></a>
+                    </div>
+                    <div class="col">
+                        <div class="img-container">
+                            <a href=""><img src="img/einaudi.jpeg" alt="Ludovico Einaudi"></a>
+                            <a href="" id="play-hover"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        <a href=""><h6 class="white-text">Ludovico Einaudi</h6></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Album -->
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="left-player">
+            <div class="img-container">
+                <img src="img/sinister.jpeg" alt="Album Sinister Cover">
+            </div>
+            <div class="player-description">
+                <h6>Sinister</h6>
+                <span class="subtitle">Nome Brano</span>
+            </div>
+            <a href=""><i class="far fa-heart"></i></a>
+            <a href=""><i class="far fa-folder"></i></a>
+            <div class="width-700-container">
+                <a href=""><i class="far fa-heart"></i></a>
+                <a href=""><i class="far fa-folder"></i></a>
+            </div>
+        </div>
+        <div class="mid-player">
+            <div class="top-row">
+                <div class="player-icons">
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href=""><i class="fas fa-step-backward"></i></a>
+                    <a href=""><i class="far fa-play-circle"></i></a>
+                    <a href=""><i class="fas fa-step-forward"></i></a>
+                    <a href=""><i class="fas fa-redo"></i></a>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <p>0:42</p>
+                <div class="player-bar">
+                    <div class="first-half"></div>
+                    <div class="second-half"></div>
+                    <div class="line-hover-music"><i class="fas fa-circle"></i></div>
+                </div>
+                <p>4:35</p>
+            </div>
+        </div>
+        <div class="right-player">
+            <a href=""><i class="fas fa-list"></i></a>
+            <a href=""><i class="fas fa-desktop"></i></a>
+            <a href=""><i class="fas fa-volume-up"></i></a>
+            <div class="volume-bar">
+                <div class="first-half"></div>
+                <div class="second-half"></div>
+                <div class="line-hover-volume"><i class="fas fa-circle"></i></div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+</body>
+</html>
