@@ -631,7 +631,7 @@ footer .img-container img {
 /* RIGHT-PLAYER */
 .right-player {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 14%;
